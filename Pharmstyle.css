@@ -1,0 +1,338 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg-overlay.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+*{
+    transition: all 0.3s !important;
+    
+}
+a{
+    text-decoration: none;
+}
+header{
+     width: 100%;
+    background:transparent;
+    position: flex;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    vertical-align:middle   ;
+    padding: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+     z-index: 10;
+    transition: 0.3s;
+    
+}
+#brName{
+word-spacing: -8px;
+font-size:      2rem;
+font-family: monospace;
+font-weight: 700;
+color:transparent;
+-webkit-text-stroke: 1px #fff; 
+background: -webkit-linear-gradient(right ,rgb(47, 29, 114),rgb(37, 121, 121),rgb(25, 163, 209));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 700;
+height: 100%;
+vertical-align: middle;
+}
+.animbg{    
+    padding: 12px 14px 14px 14px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 80px;
+    vertical-align: middle;
+    
+}
+
+nav{
+    transition: 0.3s;
+    display: inline-block;
+    /* border: black 3px solid; */
+    align-items: center;
+    vertical-align: middle;
+    float: right;
+    margin-right: 80px;
+    margin-top: 5px;
+    height: 100%;
+    padding: 4px;
+    overflow: hidden;
+  
+}
+nav ul{
+display: flex;
+flex-direction: row;
+gap: 40px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: 'Luminari' (fantasy) ;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    vertical-align: middle;
+}
+
+
+nav ul li a:hover{
+    color: rgba(224, 147, 224, 0.603);
+    
+    
+}
+.dropdown{
+    display: inline;
+}
+.dropdown button{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: 'Luminari' (fantasy) ;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    vertical-align: middle;
+    background:transparent;
+    margin: 0;
+    border: #fff solid 1px;
+    padding: 1px 7px 3px 7px;
+    
+    
+}
+.dropdown button:hover{
+    background-color: rgba(255, 255, 255, 0.646);
+    color: rgba(0, 0, 0, 0.629);
+    border-color: rgba(255, 255, 255, 0.646);
+}
+.dropdown button:focus{
+    background-color: rgba(255, 255, 255, 0.646);
+    color: rgba(0, 0, 0, 0.629);
+}
+
+.dropdown button:active{
+    background-color: rgba(255, 255, 255, 0.646);
+    color: rgba(0, 0, 0, 0.629);
+}
+
+.sliding{
+    
+    margin: 50px;
+ 
+}
+
+.words{
+    display: inline-block;
+    margin:5% 10%;
+ 
+    color: #fff;
+}
+
+.words span{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.words h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.slidingmemb{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 0 0 10% ;
+
+}
+
+.membs
+{
+    width: 25%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 20px 20px 10px;
+    background-color: rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    align-items: center  ;
+    text-align: center;
+    color: #000;
+    background-image: url(membsbg.jpg);
+    transition: ease-in-out 0.5s;
+ 
+}
+.membs:nth-child(1) 
+{
+   background-position: -50%;
+}
+.membs:nth-child(2)
+{
+   background-position: -60%;
+}
+.membs:nth-child(3)
+{
+   background-position: -70%;
+}
+.membs:nth-child(4)
+{
+   background-position: -80%;
+}
+
+.membs span{
+    color :#fff;
+    font-weight: 600px;
+}
+.med{
+    font-size: 5rem;
+    color: rgb(245, 220, 111);
+
+}
+i{
+    transition: 0.6s ease-out;
+}
+.membs a {
+   
+   position: relative;
+   top: 20px;
+    padding:4px 10px;
+    background-color: yellow;
+    border-radius: 5px;
+   
+
+}
+.membs a span{
+ transition: 0.6s ease-out;
+    font-weight: 700;
+    color: black;
+}
+.membs a:hover span {
+   
+    color: yellow;    
+}
+.membs a:hover{
+     background-color: #000;
+   
+}
+.membs a:hover i{
+    transform: translateX(4px);
+    color: yellow;
+}
+.membs span{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+
+.meds{
+    border: #fff solid 2px;
+    background-color: #fff;
+    padding: 80px 120px;
+}
+
+.meds h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    color: #000;
+}
+
+.meds span{
+    font-size:14px;
+    font-family: 'Comic sans ms';
+    color: rgba(0, 0, 0, 0.603);
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.deals{
+
+    border: white solid 4px;
+    padding: 30px;
+    height: 1000px;
+    margin: 50px;
+}
+
+.deals h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Comic sans MS';
+    color: rgb(255, 255, 255);
+}
+
+.counter{
+    display:inline-flex;
+    flex-direction: row;
+  
+    gap: 25px;     
+    border: solid #fff 3px;
+    background: -webkit-linear-gradient(right ,rgb(80, 131, 120),rgb(28, 203, 168)   ,rgb(25, 163, 209),rgb(25, 62, 74));
+    padding: 0 10px;
+}
+
+
+
+.counter span{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: 700;
+}
+ 
+.counter span:not(:nth-child(1))
+{
+    padding:0 0 0 10px ;
+    border-left: solid 2px #fff;
+} 
+
+
